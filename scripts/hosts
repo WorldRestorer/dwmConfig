@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+wget -P $HOME/ https://raw.hellogithub.com/hosts
+
+cat $HOME/.dwm/hosts_title $HOME/hosts > $HOME/temp && chmod 777 $HOME/temp && \
+mv $HOME/temp $HOME/hosts && sudo mv $HOME/hosts /etc/
+
+sudo systemctl restart NetworkManager.service

@@ -1,0 +1,14 @@
+dwm - dynamic window manager
+============================
+dwm is an extremely fast, small, and dynamic window manager for X.
+
+**The scripts are refered to [theniceboy](https://github.com/theniceboy)**
+
+## Prerequiest
+
+To enable icon, [nerd font](https://www.nerdfonts.com/) is needed. You can go to the website and download the font you like, or you can clone the entrie [repository](https://github.com/ryanoasis/nerd-fonts) from github and install all the fonts.
+
+## TODO
+
+- memory usage
+- bettery status

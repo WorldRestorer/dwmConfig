@@ -1,0 +1,13 @@
+#!/bin/zsh
+#连接网络脚本
+echo "退出请按:q"
+nmcli device wifi list
+echo "请输入WiFi名称:"
+read name
+echo "请输入WiFi密码(若无请按回车):"
+read passwd
+if [ -z "$passwd" ]; then
+	nmcli device wifi connect $name
+else
+	nmcli device wifi connect $name password $passwd
+fi
